@@ -9,74 +9,74 @@
 
 - General things
 
---      <leader>nt           -> vim.cmd.Ex  -       Explore files
+--      <leader>nt           -> vim.cmd.Ex -             Explore files
 
---      <leader>q            -> vim.cmd.q   -       :q
+--      <leader>q            -> vim.cmd.q -              :q
 
---      <leader>w            -> vim.cmd.w   -       :w
+--      <leader>w            -> vim.cmd.w -              :w
 
---      <leader>zl           -> zL          -       move screen to the right
+--      <leader>zl           -> zL -                move screen to the right
 
---      <leader>zh           -> zH          -       move screen to the left
+--      <leader>zh           -> zH -                move screen to the left
 
---      J                    -> mzJ'z       -       join following line at the end, without moving the cursor
+--      J                    -> mzJ'z - join following line at the end, without moving the cursor
 
---      <C-d>                -> <C-d>zz     -       <C-d> but the cursor is set to the middle of the screen
+--      <C-d>                -> <C-d>zz - <C-d> but the cursor is set to the middle of the screen
 
---      <C-u>                -> <C-u>zz     -       <C-u> but the cursor is set to the middle of the screen
+--      <C-u>                -> <C-u>zz - <C-u> but the cursor is set to the middle of the screen
 
---      n                    -> nzzzv       -       n but you have the cursor at the middle of the screen
+--      n                    -> nzzzv - n but you have the cursor at the middle of the screen
 
---      N                    -> Nzzzv       -       N but you have the cursor at the middle of the screen
+--      N                    -> Nzzzv - N but you have the cursor at the middle of the screen
 
---      <leader>y            -> [["+y]]     -       yanks into the system clipboard
+--      <leader>y            -> [["+y]] -                yanks into the system clipboard
 
---      <leader>Y            -> [["+Y]]     -       yanks the whole line into the system clipboard
+--      <leader>Y            -> [["+Y]] -                yanks the whole line into the system clipboard
 
 --      <leader>s            -> [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left> - replace the word under the cursor, and all coincidences in te buffer
 
---      <leader>p            -> [["_dP]]    -       like p but doesnt replace what you have changed
+--      <leader>p            -> [["_dP]] -               like p but doesnt replace what you have changed
 
 
 - Language Server Protocol
 
---      <C-p>                                       - select previous option
+--      <C-p>               - select previous option
 
---      <C-n>                                       - select next option
+--      <C-n>               - select next option
 
---      <C-y>                                       - confirms selection
+--      <C-y>               - confirms selection
 
---      <C-Space>                                   - mapping complete
+--      <C-Space>           - mapping complete
 
---      <leader>f            -> vim.lsp.buf.format  - reformat the file (fix indentations) 
+--      <leader>f            -> vim.lsp.buf.format -                 reformat the file (fix indentations) 
 
---      <C-s>                -> <cmd>cnext<CR>zz    - moves the cursor to the following error
+--      <C-s>                -> <cmd>cnext<CR>zz - moves the cursor to the following error
 
---      <C-m>                -> <cmd>cprev<CR>zz    - moves the cursor to the previous error
+--      <C-m>                -> <cmd>cprev<CR>zz - moves the cursor to the previous error
 
---      <leader>k            -> <cmd>lnext<CR>zz    - moves the cursor to the next location string
+--      <leader>k            -> <cmd>lnext<CR>zz - moves the cursor to the next location string
 
---      <leader>j            -> <cmd>lprev<CR>zz    - moves the cursor to the next location string
+--      <leader>j            -> <cmd>lprev<CR>zz - moves the cursor to the next location string
 
---      gd                   -> vim.lsp.buf.definition - moves the cursor to the definition
+--      gs                   -> vim.lsp.buf.definition - moves the cursor to the definition
 
---      K                    -> vim.lsp.buf.hover   - shows information?
+--      K                    -> vim.lsp.buf.hover - shows information?
 
 --      <leader>VWS          -> vim.lsp.buf.workspace_symbol -                 ?
 
---      <leader>vd           -> vim.diagnostic.open_float - shows error message on a floating window
+--      <leader>vd           -> vim.diagnostic.open_float -                 shows error message on a floating window
 
 --      [d                   -> vim.diagnostic.goto_next - go to next error on the file
 
 --      d]                   -> vim.diagnostic.goto_prev - go to previous error on the file
 
---      <leader>ca          -> vim.lsp.buf.code_action - list code actions
+--      <leader>vca          -> vim.lsp.buf.code_action -              ?
 
---      <leader>gr          -> vim.lsp.buf.references - shows other files with coincidences with the word under cursor
+--      <leader>vrr          -> vim.lsp.buf.references -               shows other files with coincidences with the word under cursor
 
 --      <leader>vrn          -> vim.lsp.buf.rename -               ?
 
---      <leader>gs           -> vim.cmd.Git         - interface for using git commands
+--      <leader>gs           -> vim.cmd.Git -               interface for using git commands
 
 
 - Telescope

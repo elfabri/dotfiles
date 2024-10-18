@@ -3,15 +3,17 @@ return {
         "nvim-treesitter/nvim-treesitter",
         dependencies = { "nvim-treesitter/nvim-treesitter-context" },
         build = ":TSUpdate",
-        branch = "main",
-        lazy = false,
+        -- branch = "main",
+        -- lazy = false,
         configs = function()
-            require 'nvim-treesitter.configs'.setup {
+            require 'nvim-treesitter.install'.compilers = { "zig" }
+
+            require("nvim-treesitter.configs").setup({
                 -- A list of parser names, or "all"
-                ensure_installed = { "javascript", "typescript", "c", "python", "java", "lua", "rust" },
+                ensure_installed = { "c", "lua", "vim", "vimdoc", "zig" },
 
                 -- Install parsers synchronously (only applied to `ensure_installed`)
-                sync_install = false,
+                sync_install = true,
 
                 -- Automatically install missing parsers when entering buffer
                 -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
@@ -27,9 +29,9 @@ return {
                     -- Instead of true it can also be a list of languages
                     additional_vim_regex_highlighting = false,
                 },
-            }
+            })
 
-            require 'treesitter-context'.setup {
+            require("treesitter-context").setup {
                 enable = true,            -- Enable this plugin (Can be enabled/disabled later via commands)
                 max_lines = 0,            -- How many lines the window should span. Values <= 0 mean no limit.
                 min_window_height = 0,    -- Minimum editor window height to enable context. Values <= 0 mean no limit.
